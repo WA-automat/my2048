@@ -1,6 +1,7 @@
 <!--logs.wxml-->
 <!--日志模块-->
 <view class="container log-list">
+  <rich-text class="log-title" nodes="<h1>登录日志</h1>"></rich-text>
   <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log.date}}</text>
   </block>
