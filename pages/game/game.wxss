@@ -1,1 +1,9 @@
 /* pages/game/game.wxss */
+page {
+  background-color: antiquewhite;
+}
+
+.game-container {
+  justify-content: center;
+  align-items: center;
+}

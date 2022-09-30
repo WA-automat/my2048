@@ -1,2 +1,5 @@
 <!--pages/game/game.wxml-->
-<text>游戏主界面</text>
+<view class="game-container">
+  <text>游戏主界面</text>
+</view>
+

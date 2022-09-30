@@ -1,3 +1,5 @@
 {
+  "navigationBarTitleText": "游戏界面",
+  "disableScroll": true,
   "usingComponents": {}
 }
