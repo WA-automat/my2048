@@ -1,4 +1,6 @@
 // pages/game/game.js
+var app = getApp();
+
 Page({
 
   /**
@@ -6,8 +8,8 @@ Page({
    */
   data: {
     hidden: false,
-    score:0,
-    highscore:0
+    score: 0,
+    highscore: 0
   },
 
   /**
@@ -71,7 +73,7 @@ Page({
 
   },
 
-  exitToIndex:function(e){
+  exitToIndex: function (e) {
     wx.navigateBack()
     // console.log(e)
   }

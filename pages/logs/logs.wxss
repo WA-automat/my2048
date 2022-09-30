@@ -7,6 +7,7 @@ page {
   flex-direction: column;
   padding: 40rpx;
 }
+
 .log-title{
   margin: 15rpx;
   text-align: center;
@@ -16,8 +17,9 @@ page {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .log-item {
-  margin: 15rpx;
+  margin: 5rpx;
   text-align: center;
   font-weight: 500;
   background: -webkit-linear-gradient(left, #6cc6cb, #ef33b1);
