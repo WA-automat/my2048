@@ -73,6 +73,6 @@ Page({
 
   exitToIndex:function(e){
     wx.navigateBack()
-    console.log(e)
+    // console.log(e)
   }
 })

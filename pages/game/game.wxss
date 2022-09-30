@@ -3,6 +3,11 @@ page {
   background-color: antiquewhite;
 }
 
+.container {
+  margin: 10px;
+  padding: 0;
+} 
+
 .game-container {
   margin: 0;
   padding: 20px 0;
@@ -22,7 +27,7 @@ page {
 .title {
   font-size: 40px;
   font-weight: bold;
-  margin: 30rpx;
+  margin: 20rpx;
   display: block;
   float: left;
 }
@@ -45,14 +50,14 @@ page {
   border-radius: 3px;
   color: white;
   text-align: center;
-  margin: 8px 0 0 8px;
+  margin: 6px;
 }
 
 .score-container:after,
 .best-container:after {
   position: absolute;
   width: 100%;
-  top: 10px;
+  top: 6px;
   left: 0;
   text-transform: uppercase;
   font-size: 13px;
@@ -114,10 +119,32 @@ page {
   float: right;
 }
 
+.game-map {
+  margin: 10px;
+  position: relative;
+  padding: 3px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  background: #bbada0;
+  border-radius: 6px;
+  width: 260px;
+  height: 260px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .exit-button{
+  margin-top: 10rpx;
   background: #8f7a66;
   border-radius: 3px;
-  padding: 0 10px;
+  padding: 0 10rpx;
   text-decoration: none;
   color: #f9f6f2;
   height: 40px;

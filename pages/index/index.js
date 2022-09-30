@@ -5,9 +5,9 @@ const app = getApp()
 Page({
   data: {
     background: [
-      '../../image/background1.png',
-      '../../image/background2.png',
-      '../../image/background3.png'
+      '../../image/background1.jpg',
+      '../../image/background2.jpg',
+      '../../image/background3.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
