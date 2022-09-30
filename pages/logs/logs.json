@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "登录日志",
+  "disableScroll": true,
   "usingComponents": {}
 }

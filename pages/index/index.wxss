@@ -1,0 +1,36 @@
+.index-title {
+  margin-top: 20rpx;
+  background: -webkit-linear-gradient(left, #6cc6cb, #ef33b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: larger;
+}
+
+swiper {
+  width: 100%;
+  height: calc(1600);
+  margin: 60rpx;
+}
+
+.swiper-image {
+  width: 100%;
+}
+
+.index-button {
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 10rpx;
+  width: 70%;
+}
+
+.more {
+  /*浅灰色*/
+  color: #aaa;
+  font-size: 14px;
+  position: fixed;
+  bottom: 20px;
+}

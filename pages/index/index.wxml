@@ -1,3 +1,23 @@
+<!--主容器视图-->
 <view class="container">
-  <image src=""></image>
+  <!--大标题-->
+  <rich-text class="index-title" nodes="<h1>2048<\h1>"></rich-text>
+
+  <!--轮播图片模块-->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-image" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <!--按钮模块-->
+  <view class="index-button">
+    <button bindtap="jumpToGame">开始游戏</button>
+    <button bindtap="jumpToLog">登录日志</button>
+  </view>
+
+  <!--下标模块-->
+  <text class="more">更多内容，敬请期待...</text>
 </view>
