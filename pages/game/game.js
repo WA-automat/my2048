@@ -11,9 +11,18 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 是否正在等待的变量
     hidden: false,
+
+    // 记录当前得分和历史最大得分的变量
     score: 0,
-    highscore: 0
+    highscore: 0,
+
+    // 游戏数据可以通过参数控制
+    grids: [],
+    over: false,
+    win: false,
+    overMsg: '游戏结束'
   },
 
   /**

@@ -3,9 +3,9 @@
   <view class="game-container">
     <!--加载控件-->
     <loading hidden="{{hidden}}">
-        加载中...
+      加载中...
     </loading>
-  
+
     <!--游戏页面头部，主要内容为：游戏名称、当前得分、最高得分-->
     <view class="heading">
       <text class="title">2048</text>
@@ -18,22 +18,39 @@
     <!--游戏介绍控件-->
     <view class="game-intro">
       <text class="intro-text">努力合成2048!</text>
-      <button class="reset-button" size="mini">新游戏</button>
+      <button class="reset-button" size="mini" bindtap="restart">新游戏</button>
     </view>
 
     <!--游戏主界面:gameMap-->
     <view class="game-map">
       <!--游戏结束显示-->
-
+      <view wx:if="{{win || over}}" class="game{{over ? (win ? 'won' : 'over') : ''}}">
+        <text class="over-msg">{{overMsg}}</text>
+        <view class="lower">
+          <!-- <text class="keep-playing-button">继续</text> -->
+          <text class="retry-button" bindtap="restart">再试一次</text>
+        </view>
+      </view>
 
       <!--游戏界面显示-->
-
-      
-    </view>
+      <view class="grid-container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <view wx:for="{{grids}}" wx:for-index="rowIdx" wx:key="rowIdx" wx:for-item="row" class="grid-row">
+          <view wx:for="{{row}}" wx:for-index="colIdx" wx:key="colIdx" wx:for-item="cell" class="grid-cell">
+            <view class="tile tile-{{cell.value}}">
+              <view wx:if="{{cell}}" class="tile-inner">
+                {{cell.value}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
     
+    <!--游戏主界面结束-->
+    </view>
+
     <!--游戏提示-->
     <view class="game-explanation">
-      <view class="important">如何开始：手指上下左右滑动</view> 
+      <view class="important">如何开始：手指上下左右滑动</view>
     </view>
 
     <!--返回上层界面按钮-->
