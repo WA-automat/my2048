@@ -1,5 +1,32 @@
 <!--pages/game/game.wxml-->
-<view class="game-container">
-  <text>游戏主界面</text>
-</view>
+<view class="container">
+  <view class="game-container">
+    <!--加载控件-->
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+  
+    <!--游戏页面头部，主要内容为：游戏名称、当前得分、最高得分-->
+    <view class="heading">
+      <text class="title">2048</text>
+      <view class="scores-container">
+        <view class="score-container">{{score}}</view>
+        <view class="best-container">{{highscore}}</view>
+      </view>
+    </view>
 
+    <!--游戏介绍控件-->
+    <view class="game-intro">
+      <text class="intro-text">努力合成2048!</text>
+      <button class="reset-button" size="mini">新游戏</button>
+    </view>
+
+    <!--游戏主界面:gameMap-->
+    <view class="game-map">
+      
+    </view>
+
+    <!--返回上层界面按钮-->
+    <button class="exit-button" bindtap="exitToIndex">返回</button>
+  </view>
+</view>

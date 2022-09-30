@@ -26,7 +26,7 @@ swiper {
   justify-content: center;
 }
 
-button {
+.game-button {
   margin: 10rpx;
   width: 70%;
 }

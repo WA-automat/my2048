@@ -12,7 +12,8 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 2000,
-    duration: 500
+    duration: 500,
+    buttonType: "primary"
   },
   jumpToGame: function (e) {
     wx.navigateTo({

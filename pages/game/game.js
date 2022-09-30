@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    hidden: false,
+    score:0,
+    highscore:0
   },
 
   /**
@@ -19,7 +21,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    var that = this;
 
+    // 页面渲染完毕隐藏loading
+    that.setData({
+      hidden: true
+    });
   },
 
   /**
@@ -62,5 +69,10 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  exitToIndex:function(e){
+    wx.navigateBack()
+    console.log(e)
   }
 })

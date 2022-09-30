@@ -1,7 +1,7 @@
 <!--主容器视图-->
 <view class="container">
   <!--大标题-->
-  <rich-text class="index-title" nodes="<h1>2048<\h1>"></rich-text>
+  <rich-text class="index-title" nodes="<h1>my2048小游戏<\h1>"></rich-text>
 
   <!--轮播图片模块-->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -14,8 +14,12 @@
   
   <!--按钮模块-->
   <view class="index-button">
-    <button bindtap="jumpToGame">开始游戏</button>
-    <button bindtap="jumpToLog">登录日志</button>
+    <button type="{{buttonType}}" class="game-button" bindtap="jumpToGame" plain>
+      开始游戏
+    </button>
+    <button type="{{buttonType}}" class="game-button" bindtap="jumpToLog" plain>
+      登录日志
+    </button>
   </view>
 
   <!--下标模块-->
