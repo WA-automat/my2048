@@ -6,11 +6,11 @@ page {
 .container {
   margin: 10px;
   padding: 0;
-} 
+}
 
 .game-container {
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   color: #776e65;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -104,7 +104,7 @@ page {
   float: left;
 }
 
-.reset-button{
+.reset-button {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
@@ -140,7 +140,14 @@ page {
   box-sizing: border-box;
 }
 
-.exit-button{
+.important {
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit-button {
   margin-top: 10rpx;
   background: #8f7a66;
   border-radius: 3px;

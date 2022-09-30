@@ -23,7 +23,17 @@
 
     <!--游戏主界面:gameMap-->
     <view class="game-map">
+      <!--游戏结束显示-->
+
+
+      <!--游戏界面显示-->
+
       
+    </view>
+    
+    <!--游戏提示-->
+    <view class="game-explanation">
+      <view class="important">如何开始：手指上下左右滑动</view> 
     </view>
 
     <!--返回上层界面按钮-->

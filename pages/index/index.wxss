@@ -28,8 +28,8 @@ swiper {
 }
 
 .game-button {
-  margin: 10rpx;
-  width: 70%;
+  margin: 20rpx;
+  width: 60%;
 }
 
 .more {
