@@ -6,15 +6,15 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "我的2048小游戏",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#353535",
+    "color": "#fff",
     "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "backgroundColor": "#333",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "游戏"
