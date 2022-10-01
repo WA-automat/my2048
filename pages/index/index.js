@@ -9,7 +9,7 @@ Page({
       '../../image/background2.jpg',
       '../../image/background3.jpg'
     ],
-    indicatorDots: true,
+    indicatorDots: false,
     autoplay: true,
     interval: 2000,
     duration: 500,

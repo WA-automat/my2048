@@ -481,7 +481,7 @@ hr {
 }
 
 .restart-button {
-  display: inline-block;
+  display: flex;
   background: #8f7a66;
   border-radius: 3px;
   padding: 0 20px;
@@ -792,7 +792,7 @@ hr {
 }
 
 .exit-button {
-  width: 42%;
+  width: 40%;
   padding: 0;
   display: block;
   box-sizing: border-box;

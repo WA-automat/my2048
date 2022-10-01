@@ -4,7 +4,7 @@
   <rich-text class="index-title" nodes="<h1>my2048小游戏<\h1>"></rich-text>
 
   <!--轮播图片模块-->
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{background}}" wx:key="*this">
       <swiper-item>
         <image class="swiper-image" src="{{item}}"></image>
