@@ -512,8 +512,8 @@ hr {
 
   .title {
     font-size: 27px;
-    margin-top: 15px;
-    right: 10px;
+    margin: 10px 20px;
+    left: 100px;
   }
 
   /*.container {
@@ -558,7 +558,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #a89d92;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -577,7 +577,6 @@ hr {
     background: rgba(238, 228, 218, 0.5);
     z-index: 100;
     text-align: center;
-
   }
 
   .game-container .game-message .over-msg {
@@ -650,7 +649,7 @@ hr {
     margin-right: 10px;
     float: left;
     border-radius: 3px;
-    background: rgba(238, 228, 218, 0.35);
+    background: rgba(235, 229, 223, 0.35);
   }
 
   .grid-cell:last-child {
@@ -808,5 +807,4 @@ hr {
   line-height: 42px;
   display: block;
   text-align: center;
-  float: right;
 }
