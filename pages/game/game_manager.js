@@ -9,6 +9,8 @@ function GameManager(size) {
 }
 
 GameManager.prototype = {
+
+  // 初始化一个网格
   setup: function () { 
 
     this.grid = new Grid(this.size);
@@ -38,6 +40,7 @@ GameManager.prototype = {
 
   },
 
+  // 返回当前的信息
   actuate: function () {
 
     return {
@@ -46,6 +49,7 @@ GameManager.prototype = {
       won: this.won,
       score: this.score
     }
+
   },
 
   // 偏移向量
@@ -72,6 +76,7 @@ GameManager.prototype = {
     return map[direction];
   },
 
+  // 根据方向判断内容
   buildTraversals: function (vector) {
     var traversals = {
       x: [],
@@ -182,14 +187,17 @@ GameManager.prototype = {
     }
   },
 
+  // 判断位置是否相同
   positionsEqual: function (first, second) {
     return first.x === second.x && first.y === second.y;
   },
 
+  // 判断是否可移动
   movesAvailable: function () {
     return this.grid.cellsAvailable() || this.tileMatchesAvailable();
   },
 
+  // 判断cell是否可合并
   tileMatchesAvailable: function () {
     var self = this;
 
