@@ -10,9 +10,8 @@ function Tile(position, value) {
   this.mergedFrom = null;
 }
 
-/*
 // 设置 Tile 的 prototype 函数原型
-this.prototype = {
+Tile.prototype = {
   // 记录上一个格子的位置
   savePosition: function () {
     this.previousPosition = {
@@ -38,7 +37,6 @@ this.prototype = {
     };
   }
 }
-*/
 
 // 将接口暴露出来
 module.exports = Tile;
