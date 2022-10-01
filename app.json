@@ -7,7 +7,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#333",
-    "navigationBarTitleText": "我的2048小游戏",
+    "navigationBarTitleText": "My2048",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
